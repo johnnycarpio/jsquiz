@@ -1,0 +1,59 @@
+* {
+    margin: 0 0 0 0;
+}
+
+.header {
+    background: lightskyblue;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-container {
+    margin-top: 30%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    border: black solid 2px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.secondary-container h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.secondary-container p {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    padding-top: 5%;
+    justify-content: space-around;
+}
+
+.start-button {
+    font-size: 20px;
+    background: limegreen;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.high-score-button {
+    background: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.answer {
+    margin-top: 2%;
+    font-size: 20px;
+}
