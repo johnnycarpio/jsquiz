@@ -7,7 +7,7 @@ var timeRemaining = 120;
 
 // When START button is clicked, timer starts
 
-function gameStart () {
+function gameStart() {
     var countDown = function() {
         timeRemaining--;
             if(timeRemaining === 0){
@@ -24,11 +24,11 @@ var question1 = function() {
     $(highScoreButton).remove();
     $(content1).remove();
     $(content2).remove();
-    $(".main-container").append("<h1 class='question'>Question Goes Here</h1>")
-    $(".main-container").append("<button class='answer' data-id='1'> Answer 1 (CORRECT) </button>");
-    $(".main-container").append("<button class='answer' data-id='2'> Answer 2 </button>");
-    $(".main-container").append("<button class='answer' data-id='3'> Answer 3 </button>");
-    $(".main-container").append("<button class='answer' data-id='4'> Answer 4 </button>");
+    $(".main-container").append("<h1 class='question'>Where is it best to link your JS file?</h1>")
+    $(".main-container").append("<button class='answer' data-id='1'> End of the Body </button>");
+    $(".main-container").append("<button class='answer' data-id='2'> In the Header </button>");
+    $(".main-container").append("<button class='answer' data-id='3'> Right after linking CSS </button>");
+    $(".main-container").append("<button class='answer' data-id='4'> None of the Above </button>");
 
     $(".answer").click(function() {
         var finalAnswer = $(this).attr("data-id");
@@ -46,11 +46,11 @@ var question1 = function() {
 var question2 = function() {
     $(".answer").remove();
     $(".question").remove();
-    $(".main-container").append("<h1 class='question'>Question NUMBER 2 Goes Here</h1>")
-    $(".main-container").append("<button class='answer' data-id='1'> TEST ANSWER 1 </button>");
-    $(".main-container").append("<button class='answer' data-id='2'> TEST ANSWER 2 (CORRECT) </button>");
-    $(".main-container").append("<button class='answer' data-id='3'> TEST ANSWER 3 </button>");
-    $(".main-container").append("<button class='answer' data-id='4'> TEST ANSWER 4 </button>");
+    $(".main-container").append("<h1 class='question'>What does JavaScript do?</h1>")
+    $(".main-container").append("<button class='answer' data-id='1'> Puts content into the webpage </button>");
+    $(".main-container").append("<button class='answer' data-id='2'> Allows the webpage to execute functions </button>");
+    $(".main-container").append("<button class='answer' data-id='3'> Styles the webpage </button>");
+    $(".main-container").append("<button class='answer' data-id='4'> None of the Above </button>");
 
     $(".answer").click(function() {
         var finalAnswer = $(this).attr("data-id");
@@ -70,15 +70,15 @@ var question2 = function() {
 var question3 = function() {
     $(".answer").remove();
     $(".question").remove();
-    $(".main-container").append("<h1 class='question'>Question NUMBER 3 Goes Here</h1>")
-    $(".main-container").append("<button class='answer' data-id='1'> TEST ANSWER 1 </button>");
-    $(".main-container").append("<button class='answer' data-id='2'> TEST ANSWER 2 (CORRECT) </button>");
-    $(".main-container").append("<button class='answer' data-id='3'> TEST ANSWER 3 </button>");
-    $(".main-container").append("<button class='answer' data-id='4'> TEST ANSWER 4 </button>");
+    $(".main-container").append("<h1 class='question'>What type of data types can you put in an Array?</h1>")
+    $(".main-container").append("<button class='answer' data-id='1'> Strings </button>");
+    $(".main-container").append("<button class='answer' data-id='2'> Numbers </button>");
+    $(".main-container").append("<button class='answer' data-id='3'> Boolean </button>");
+    $(".main-container").append("<button class='answer' data-id='4'> All of the Above </button>");
 
     $(".answer").click(function() {
         var finalAnswer = $(this).attr("data-id");
-        if (finalAnswer == "2") {
+        if (finalAnswer == "4") {
             $(".result").remove();
             $(".main-container").append("<p class='result'>You are correct!</p>")
         }
@@ -94,11 +94,11 @@ var question3 = function() {
 var question4 = function() {
     $(".answer").remove();
     $(".question").remove();
-    $(".main-container").append("<h1 class='question'>Question NUMBER 4 Goes Here</h1>")
-    $(".main-container").append("<button class='answer' data-id='1'> TEST ANSWER 1 </button>");
-    $(".main-container").append("<button class='answer' data-id='2'> TEST ANSWER 2 (CORRECT) </button>");
-    $(".main-container").append("<button class='answer' data-id='3'> TEST ANSWER 3 </button>");
-    $(".main-container").append("<button class='answer' data-id='4'> TEST ANSWER 4 </button>");
+    $(".main-container").append("<h1 class='question'>What symbols are used to create an Array?</h1>")
+    $(".main-container").append("<button class='answer' data-id='1'> ( & ) </button>");
+    $(".main-container").append("<button class='answer' data-id='2'> [ & ] </button>");
+    $(".main-container").append("<button class='answer' data-id='3'> { & } </button>");
+    $(".main-container").append("<button class='answer' data-id='4'> None of the Above </button>");
 
     $(".answer").click(function() {
         var finalAnswer = $(this).attr("data-id");
@@ -118,15 +118,15 @@ var question4 = function() {
 var question5 = function() {
     $(".answer").remove();
     $(".question").remove();
-    $(".main-container").append("<h1 class='question'>Question NUMBER 5 Goes Here</h1>")
-    $(".main-container").append("<button class='answer' data-id='1'> TEST ANSWER 1 </button>");
-    $(".main-container").append("<button class='answer' data-id='2'> TEST ANSWER 2 (CORRECT) </button>");
-    $(".main-container").append("<button class='answer' data-id='3'> TEST ANSWER 3 </button>");
-    $(".main-container").append("<button class='answer' data-id='4'> TEST ANSWER 4 </button>");
+    $(".main-container").append("<h1 class='question'>What is jQuery?</h1>")
+    $(".main-container").append("<button class='answer' data-id='1'> A JavaScript library designed to simplify DOM Traversal </button>");
+    $(".main-container").append("<button class='answer' data-id='2'> A 1990's rapper </button>");
+    $(".main-container").append("<button class='answer' data-id='3'> jCole's cousin  </button>");
+    $(".main-container").append("<button class='answer' data-id='4'> None of the Above </button>");
 
     $(".answer").click(function() {
         var finalAnswer = $(this).attr("data-id");
-        if (finalAnswer == "2") {
+        if (finalAnswer == "1") {
             $(".result").remove();
             $(".main-container").append("<p class='result'>You are correct!</p>")
         }
@@ -143,7 +143,7 @@ var finalScore = function() {
     $(".answer").remove();
     $(".question").remove();
     $(".result").remove();
-    $(".main-container").append("<h1>Your final score is</h1>" + timeRemaining);
+    $(".main-container").append("<h1 class='finalScore'>Your final score is</h1>" + timeRemaining);
 }
 
 

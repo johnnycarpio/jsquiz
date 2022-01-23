@@ -55,5 +55,25 @@
 
 .answer {
     margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     font-size: 20px;
+    background: lightseagreen;
+}
+
+.finalScore {
+    font-size: 20px;
+}
+
+.result {
+    font-style: italic;
+    padding-bottom: 5%;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.question {
+    padding-bottom: 4%;
 }
