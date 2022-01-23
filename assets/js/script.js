@@ -3,7 +3,7 @@ var highScoreButton = document.querySelector(".high-score-button");
 var timer = document.querySelector("#timer");
 var content1 = document.querySelector(".welcome");
 var content2 = document.querySelector(".rules");
-var timeRemaining = 120;
+var timeRemaining = 10;
 
 // When START button is clicked, timer starts
 
@@ -12,6 +12,7 @@ function gameStart() {
         timeRemaining--;
             if(timeRemaining === 0){
                 clearInterval(startGame)
+                finalScore();
             };
             document.querySelector(".timer").innerHTML = timeRemaining;
     };
