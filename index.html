@@ -16,11 +16,16 @@
         <div class="secondary-container">
             <h4 class="welcome">Welcome to the JavaScript Quiz!</h4>
             <p class="rules">Choose the correct answer from the choices provided. Every correct answer will send you to the next question, while incorrect answers will result in time lost on the timer.</p>
+            <ol id="initial-list"></ol>
             <div class="buttons">
             <button class="start-button">START</button>
             <button class="high-score-button">High Scores</button>
             </div>
         </div>
+    </div>
+    <div class="third-container hide" id="third-container">
+        <input type='text' id='initials' placeholder='Enter Initials' />
+        <button class='initial-button' id='save-initial'> Submit </button>
     </div>
     <script src="./assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
