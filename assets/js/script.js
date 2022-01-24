@@ -155,7 +155,8 @@ var finalScore = function () {
     $(".main-container").append("<h1 class='finalScore'>Your final score is</h1>" + timeRemaining);
 
     var thirdContainer = document.getElementById("third-container")
-    thirdContainer.classList.remove("hide")
+    thirdContainer.classList.remove("hide");
+
 }
 
 buttonEl.addEventListener("click", function() {
@@ -167,7 +168,8 @@ buttonEl.addEventListener("click", function() {
     submittedInitials.textContent = initialSubmit;
     initialList.appendChild(submittedInitials);
 
+    localStorage.setItem("initialSubmit", initialSubmit);
     
-})
+});
 
 startButton.addEventListener("click", gameStart);
